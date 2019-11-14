@@ -1,0 +1,235 @@
+$inputFocusBg: rgba(97, 112, 255, 0.1);
+$inputHoverBg: rgba(0,0,0,.03);
+
+.header_mockup {
+  height: 50px;
+}
+
+.subjects {
+  background-color: #e7e7e7;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0;
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.subject_wrapper {
+  padding: .5rem 0 0 .5rem;
+  width: 25%;
+  box-sizing: border-box;
+}
+
+.subject {
+  font-size: medium;
+  background-color: white;
+  padding: .5rem .8rem;
+  border-radius: .5rem;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+
+  .subject_header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.3rem;
+  }
+
+  input.name {
+    width: 100%;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    &:focus {
+      outline: none;
+      background-color: $inputFocusBg;
+    }
+
+    &:hover {
+      background-color: $inputHoverBg;
+
+      &:focus {
+        background-color: $inputFocusBg !important;
+      }
+    }
+  }
+
+  .btn {
+    //padding: 0 .2rem;
+    //border: 1px solid $inputFocusBg;
+    cursor: pointer;
+    margin-left: .2rem;
+    opacity: 0;
+    font-size: 1.2em !important;
+
+    &:hover {
+      background-color: $inputFocusBg !important;
+    }
+  }
+
+  .subject_header {
+    &:hover {
+      .btn {
+        opacity: 1;
+      }
+    }
+  }
+
+  .children {
+    .row {
+      display: flex;
+      .dot {
+        width: min-content;
+      }
+      .content {
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: .5rem;
+
+
+
+        textarea.child_desc {
+          width: 100%;
+          resize: none;
+          border: none;
+          font-size: 0.8rem;
+          overflow: hidden;
+          min-height: 1em;
+          color: #383838;
+
+          &:focus {
+            outline: none;
+            background-color: $inputFocusBg;
+          }
+
+          &:hover {
+            background-color: $inputHoverBg;
+
+            &:focus {
+              background-color: $inputFocusBg !important;
+            }
+          }
+        }
+      }
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+    }
+
+    input.child_name {
+      display: block;
+      width: 100%;
+      font-size: medium;
+      border: none;
+
+      &:focus {
+        outline: none;
+        background-color: $inputFocusBg;
+      }
+
+      &:hover {
+        background-color: $inputHoverBg;
+
+        &:focus {
+          background-color: $inputFocusBg !important;
+        }
+      }
+    }
+
+    .btn_attach, .btn_remove {
+      //padding: 0 .2rem;
+      //border: 1px solid $inputFocusBg;
+      cursor: pointer;
+      margin-left: .2rem;
+      opacity: 0;
+
+      &:hover {
+        background-color: $inputFocusBg !important;
+      }
+    }
+
+    .header {
+      &:hover {
+        .btn_attach, .btn_remove {
+          opacity: 1;
+        }
+      }
+    }
+
+    .attach {
+      display: flex;
+      font-size: 0.8rem;
+      font-weight: 700;
+      align-items: center;
+    }
+
+    .icon {
+      display: block;
+      font-size: 1rem !important;
+      margin-right: 0.2rem;
+    }
+
+    .attach_input_wrapper {
+      width: 100%;
+      position: relative;
+    }
+
+    .attach_input {
+      font-weight: 700;
+      font-size: 0.8rem;
+      border: none;
+      width: 100%;
+
+      &:focus {
+        outline: none;
+        background-color: $inputFocusBg;
+      }
+
+      &:hover {
+        background-color: $inputHoverBg;
+
+        &:focus {
+          background-color: $inputFocusBg !important;
+        }
+      }
+    }
+
+    .helper {
+      position: absolute;
+      width: 100%;
+      background-color: white;
+      box-shadow: 0 0 4px rgba(0,0,0,0.3);
+    }
+
+    .helper_item {
+      padding: .1rem .2rem;
+      font-weight: normal;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $inputHoverBg;
+      }
+    }
+
+    .attach_link {
+      a {
+        text-decoration: none;
+        color: #2e5ed1;
+      }
+    }
+
+    .btn_remove {
+      font-size: 1em;
+      opacity: 0;
+    }
+
+    .attach {
+      &:hover {
+        .btn_remove {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,138 @@
+.header_mockup {
+  height: 50px; }
+
+.subjects {
+  background-color: #e7e7e7;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0;
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem; }
+
+.subject_wrapper {
+  padding: .5rem 0 0 .5rem;
+  width: 25%;
+  box-sizing: border-box; }
+
+.subject {
+  font-size: medium;
+  background-color: white;
+  padding: .5rem .8rem;
+  border-radius: .5rem;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2); }
+  .subject .subject_header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.3rem; }
+  .subject input.name {
+    width: 100%;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 500; }
+    .subject input.name:focus {
+      outline: none;
+      background-color: rgba(97, 112, 255, 0.1); }
+    .subject input.name:hover {
+      background-color: rgba(0, 0, 0, 0.03); }
+      .subject input.name:hover:focus {
+        background-color: rgba(97, 112, 255, 0.1) !important; }
+  .subject .btn {
+    cursor: pointer;
+    margin-left: .2rem;
+    opacity: 0;
+    font-size: 1.2em !important; }
+    .subject .btn:hover {
+      background-color: rgba(97, 112, 255, 0.1) !important; }
+  .subject .subject_header:hover .btn {
+    opacity: 1; }
+  .subject .children .row {
+    display: flex; }
+    .subject .children .row .dot {
+      width: min-content; }
+    .subject .children .row .content {
+      width: 100%;
+      box-sizing: border-box;
+      padding-left: .5rem; }
+      .subject .children .row .content textarea.child_desc {
+        width: 100%;
+        resize: none;
+        border: none;
+        font-size: 0.8rem;
+        overflow: hidden;
+        min-height: 1em;
+        color: #383838; }
+        .subject .children .row .content textarea.child_desc:focus {
+          outline: none;
+          background-color: rgba(97, 112, 255, 0.1); }
+        .subject .children .row .content textarea.child_desc:hover {
+          background-color: rgba(0, 0, 0, 0.03); }
+          .subject .children .row .content textarea.child_desc:hover:focus {
+            background-color: rgba(97, 112, 255, 0.1) !important; }
+  .subject .children .header {
+    display: flex;
+    align-items: center; }
+  .subject .children input.child_name {
+    display: block;
+    width: 100%;
+    font-size: medium;
+    border: none; }
+    .subject .children input.child_name:focus {
+      outline: none;
+      background-color: rgba(97, 112, 255, 0.1); }
+    .subject .children input.child_name:hover {
+      background-color: rgba(0, 0, 0, 0.03); }
+      .subject .children input.child_name:hover:focus {
+        background-color: rgba(97, 112, 255, 0.1) !important; }
+  .subject .children .btn_attach, .subject .children .btn_remove {
+    cursor: pointer;
+    margin-left: .2rem;
+    opacity: 0; }
+    .subject .children .btn_attach:hover, .subject .children .btn_remove:hover {
+      background-color: rgba(97, 112, 255, 0.1) !important; }
+  .subject .children .header:hover .btn_attach, .subject .children .header:hover .btn_remove {
+    opacity: 1; }
+  .subject .children .attach {
+    display: flex;
+    font-size: 0.8rem;
+    font-weight: 700;
+    align-items: center; }
+  .subject .children .icon {
+    display: block;
+    font-size: 1rem !important;
+    margin-right: 0.2rem; }
+  .subject .children .attach_input_wrapper {
+    width: 100%;
+    position: relative; }
+  .subject .children .attach_input {
+    font-weight: 700;
+    font-size: 0.8rem;
+    border: none;
+    width: 100%; }
+    .subject .children .attach_input:focus {
+      outline: none;
+      background-color: rgba(97, 112, 255, 0.1); }
+    .subject .children .attach_input:hover {
+      background-color: rgba(0, 0, 0, 0.03); }
+      .subject .children .attach_input:hover:focus {
+        background-color: rgba(97, 112, 255, 0.1) !important; }
+  .subject .children .helper {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3); }
+  .subject .children .helper_item {
+    padding: .1rem .2rem;
+    font-weight: normal;
+    cursor: pointer; }
+    .subject .children .helper_item:hover {
+      background-color: rgba(0, 0, 0, 0.03); }
+  .subject .children .attach_link a {
+    text-decoration: none;
+    color: #2e5ed1; }
+  .subject .children .btn_remove {
+    font-size: 1em;
+    opacity: 0; }
+  .subject .children .attach:hover .btn_remove {
+    opacity: 1; }
+
+/*# sourceMappingURL=subjects.module.css.map */

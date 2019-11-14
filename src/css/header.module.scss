@@ -1,0 +1,19 @@
+.header {
+  background-color: #4b4b4b;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  box-sizing: border-box;
+  height: 50px;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 4px rgba(0,0,0,0.6);
+}
+
+.icon {
+  font-size: 20px !important;
+  margin-left: 1rem;
+}
